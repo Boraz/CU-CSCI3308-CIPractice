@@ -22,6 +22,9 @@ geometry_test.o: geometry_test.c geometry.h
 geometry.o: geometry.c geometry.h
 	$(CC) $(CFLAGS) $< -o $@
 
+test.o: geometry_test.o
+	
+
 dep:
 	sudo apt-get install check
 
